@@ -2,6 +2,8 @@ package br.com.alura.leilao;
 
 import org.junit.Test;
 
+import br.com.alura.leilao.model.Usuario;
+
 import static org.junit.Assert.*;
 
 /**
@@ -13,5 +15,16 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+        assertNotEquals(3,2+2);
+        assertTrue(true);
+        assertFalse(false);
+
+
+        assertNull(null);
+        assertNotNull(new Usuario("Alex"));
+       // assertThat(2+2, equalTo(3));
+
+
+
     }
 }
